@@ -1,0 +1,147 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* font-family: 'Courgette', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@900&display=swap');
+/* font-family: 'Battambang', cursive; */
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    transition: all 0.5s;
+    color: aliceblue;
+}
+
+/*Upper Section*/
+#up{
+    height: 30vh;
+    width: 100vw;
+    background-color: rgb(203, 70, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: cursive;;
+}
+#code{
+    font-size: 3rem;
+}
+
+
+
+/*Middle bar*/
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7vh;
+    background-color: rgb(255, 0, 191);
+    
+}
+#instruction{
+    font-family: 'Courgette', cursive;
+    font-size: 1.5rem;
+}
+#message{
+    width: 10vw;
+    height: 100%;
+    /* background-color: black; */
+    margin-right: 10rem;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
+}
+button{
+    padding: 5px 5px;
+    margin: 0px 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    border-radius: 5px ;
+    border-color: aliceblue;
+    width: 6rem;
+    background-color: rgb(251, 255, 0);
+    width: auto;
+}
+button:hover{
+    background-color: rgb(230, 102, 0);;
+}
+#generate{
+    width: auto;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*Color Picker Section*/
+.main{
+    box-sizing: border-box;
+    height: 63vh;
+    background-color: rgb(41, 38, 38);
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 200px;
+    width:200px;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    margin: 25px;
+}
+
+
+
+
+
+
+
+ /* media queries */
+ @media screen and (max-width: 480px) {
+    *{
+        box-sizing: border-box;
+    }
+    #up{
+        height: 25vh;
+    }
+    #code{
+        font-size: 2.5rem;
+    }
+    .middle{
+        flex-direction: column-reverse;
+        height: 12vh;
+        padding: 10px;
+    }
+    button{
+        width: auto;
+    }
+    #instruction{
+        font-size: 1.2rem;
+    }
+    #message{
+        width: 100vw;
+        margin-right: 0;
+    }
+    .main{
+        height: 63vh;
+        grid-template-columns: auto;
+    }
+    .box{
+        height: 100px;
+        width: 150px;
+    }
+}

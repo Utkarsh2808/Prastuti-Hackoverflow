@@ -1,0 +1,125 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* font-family: 'Courgette', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@900&display=swap');
+/* font-family: 'Battambang', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: all 0.5s;
+}
+
+
+/* Heading Section */
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 2em;
+    height: 40vh;
+    width: 100%;
+    font-family: 'Battambang', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title1{
+    font-size: 1.2em;
+}
+.title2{
+    font-size: 1em;
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
+}
+
+
+
+/* Button Section */
+.btn{
+    padding: 5px 10px;
+    font-size: 1.5em;
+    margin: 0px 100px;
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
+    background-color: rgb(220, 244, 0);;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+.btn:hover{
+    background-color: rgb(0, 153, 255);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    flex-direction: row;    
+}
+.buttons a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* Instructions Body  */
+.instruction{
+    
+    height: 40vh;
+    width: 100%;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5%;
+}
+
+.container::before{
+    background: url('img.jpg') no-repeat center center/cover;
+    content:"";
+    position: absolute; 
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    }
+    
+ /* media queries */
+@media screen and (max-width: 480px) {
+    .title1{
+        font-size: 1.5rem;
+    }
+    .title2{
+        font-size: 1.1rem; 
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 5px;
+        margin: 0px 20px;
+    }
+    .instruction{
+        font-size: 1.2rem;
+    }
+}
